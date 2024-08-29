@@ -1,4 +1,4 @@
-// Henter det aktuelle timetal
+// Henter hvad klokken er
 var timetal = new Date().getHours();
 
 // Funktion der udskriver hilsen baseret på tidspunktet

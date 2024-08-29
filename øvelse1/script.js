@@ -1,11 +1,12 @@
-const minKnap = document.querySelector("#knapElement");
-const billeder = document.querySelectorAll("img");
+// Opretter konstant
+const img = document.querySelectorAll("img");
 
-billeder.forEach((billede) => {
-  billede.addEventListener("click", alkoholTjek);
+// Tilføjer funktion (alkoholTjek) til hver click på img
+img.forEach((img) => {
+  img.addEventListener("click", alkoholTjek);
 });
 
-minKnap.addEventListener("click", alkoholTjek);
+// Funktionen
 function alkoholTjek() {
   if (this.alt === "øl" || this.alt === "snaps") {
     console.log("Indeholder alkohol");
